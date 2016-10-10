@@ -28,7 +28,14 @@ You can also easily compare the kerning in two different fonts (for example: Sou
 
 ## Sample Images
 
-![Lowercase Pairs.](/images/sample01-lowercase.png "Lowercase Pairs and word list")
-![Lowercase Pairs.](/images/sample02-uppercase.png "Uppercase Pairs and word list")
-![Lowercase Pairs.](/images/sample03-capitalized.png "Capitalized Pairs and word list")
+Lowercase Pairs and Word list:
+![Lowercase Pairs.](/images/sample01-lowercase.png "Lowercase Pairs and Word list")
+
+Uppercase Pairs and Word list:
+![Lowercase Pairs.](/images/sample02-uppercase.png "Uppercase Pairs and Word list")
+
+Capitalized Pairs and Word list:
+![Lowercase Pairs.](/images/sample03-capitalized.png "Capitalized Pairs and Word list")
+
+Comparing Fonts:
 ![Lowercase Pairs.](/images/sample04-compare.png "Comparing Fonts")
