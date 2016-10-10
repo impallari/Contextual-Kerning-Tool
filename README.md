@@ -27,7 +27,7 @@ It also shows you the list of pairs that you have not kerned. It sounds silly, b
 You can also easily compare the kerning in two different fonts (for example: Source Sans vs. Roboto), or in two different versions of the same font (for example: LibreFranklin v1.000 vs. LibreFranklin v2.000).
 
 ## How it works:
-Since this is only an initial prototype, operation ir rather tedious and involves a lot of manual steps that hopefully will be automated in future iterations.
+Since this is only an initial prototype, operation ir rather tedious and involves a lot of manual steps that hopefully will be automated in future iterations (Ideally I will love to see this idea implemented as a Glyphs script or plugin).
 
 * First, upload all the files inside a new folder in your php hosting
 * Next, you need to make a copy of your font and manually expand the kerning table
