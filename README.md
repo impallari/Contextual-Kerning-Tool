@@ -10,4 +10,4 @@ Once you have those custom list of words, its very easy to test your font and sp
 
 By looking at the list of words that are resolved using spacing only, if there is any problem it will become self evident.
 
-And by looking at the list of heavily kerned words you can spot inconsistency cases (where you have set pairs overly tight or overly loose). Since they are displayed one after another, minor differecnes add up quickly and any incosistency will quickly pop up.
+And by looking at the list of heavily kerned words you can spot inconsistency cases (where you have set some individual pair overly tight or overly loose). Since they are displayed one after another, minor differecnes add up, and any incosistency will quickly pop up.
