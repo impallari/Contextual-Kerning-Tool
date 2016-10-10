@@ -2,7 +2,7 @@
 
 The "Contextual Kerning Tool" is an aid to the kerning process
 
-## Spliting the Dictionary in Two
+## Spliting the Dictionary in two
 
 It reads your font's kerning pairs and split the dictionary in two:
 * Spacing Words: Words that are solved by using only spacing and no kerning pairs at all
@@ -16,8 +16,9 @@ And by looking at the list of heavily kerned words you can spot inconsistency ca
 
 ## Bird-eye view of your kerning pairs
 
-Reading your list of kerning pairs in the traditional list view is far from ideal. This tools gives you a easy to scan birds eye view of your kerning pairs. Easy to scan, and easy to detect pairs that should or shouldn't be kerned.
+Reading your list of kerning pairs in the traditional list view is far from ideal. This tools gives you an easy to scan "birds eye" view of your kerning pairs. 
+It also shows you the list of pairs that you have not kerned. It sounds silly, but its actually quite usefull to quickly detect pairs that should be kerned and for some reason you forgot.
 
 ## Compare kerning in two fonts
 
-You can also easily compare the kerning in two different fonts, or in two different versions of the same font
+You can also easily compare the kerning in two different fonts, or in two different versions of the same font.
