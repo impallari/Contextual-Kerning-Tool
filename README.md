@@ -24,4 +24,4 @@ It also shows you the list of pairs that you have not kerned. It sounds silly, b
 
 ## Compare kerning in two fonts
 
-You can also easily compare the kerning in two different fonts, or in two different versions of the same font.
+You can also easily compare the kerning in two different fonts (for example: Source Sans vs. Roboto), or in two different versions of the same font (for example: LibreFranklin v1.000 vs. LibreFranklin v2.000).
