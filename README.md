@@ -16,7 +16,10 @@ And by looking at the list of heavily kerned words you can spot inconsistency ca
 
 ## Bird-eye view of your kerning pairs
 
-Reading your list of kerning pairs in the traditional list view is far from ideal. This tools gives you an easy to scan "birds eye" view of your kerning pairs. 
+Reading your list of kerning pairs in the traditional list view is far from ideal.
+
+This tools gives you an easy to scan "birds eye" view of your kerning pairs. 
+
 It also shows you the list of pairs that you have not kerned. It sounds silly, but its actually quite usefull to quickly detect pairs that should be kerned and for some reason you forgot.
 
 ## Compare kerning in two fonts
