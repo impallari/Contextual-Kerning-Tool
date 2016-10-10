@@ -1,6 +1,6 @@
-# Contexual-Kerning-Tool
+# Contexual Kerning Tool
 
-The "Contextual Kerning Tool" aids your kerning process.
+The "Contextual Kerning Tool" is an aid to the kerning process
 
 ## Spliting the Dictionary in Two
 
