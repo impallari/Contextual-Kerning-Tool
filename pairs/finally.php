@@ -1,7 +1,7 @@
 <?php
 
-# Expanded list of Core Kerning Pairs
-# Used for the Finally font
+# Human readable name
+$font_name = "Finally"; 
 
 # Lower to Lower
 # -------------------------

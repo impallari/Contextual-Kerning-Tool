@@ -6,6 +6,14 @@ header("Content-type: text/html; charset=utf-8"); // UTF 8
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="author" content="Pablo Impallari www.impallari.com" />
 <title>Impallari Contextual Kerning Tool</title>
+<style>
+.similar {
+    color: green;
+}
+.different {
+    color: red;
+}
+</style>
 </head>
 
 <body>
@@ -29,7 +37,13 @@ header("Content-type: text/html; charset=utf-8"); // UTF 8
 				echo "<div>";
 				foreach ($lowercase_all as $key => $first) {
 					foreach ($lowercase_all as $key => $second) {
-						if (in_array($first.$second, $pairs_lower_to_lower_font1)) echo $first.$second." ";
+						if (in_array($first.$second, $pairs_lower_to_lower_font1)) {
+							if (in_array($first.$second, $pairs_lower_to_lower_font2)) {
+								echo '<span class="similar">'.$first.$second.'</span> ';
+							} else {
+								echo '<span class="different">'.$first.$second.'</span> ';
+							}
+						}
 					}
 					echo "<br />";
 				}
@@ -42,7 +56,13 @@ header("Content-type: text/html; charset=utf-8"); // UTF 8
 				echo "<div>";
 				foreach ($lowercase_all as $key => $first) {
 					foreach ($lowercase_all as $key => $second) {
-						if (in_array($first.$second, $pairs_lower_to_lower_font2)) echo $first.$second." ";
+						if (in_array($first.$second, $pairs_lower_to_lower_font2)) {
+							if (in_array($first.$second, $pairs_lower_to_lower_font1)) {
+								echo '<span class="similar">'.$first.$second.'</span> ';
+							} else {
+								echo '<span class="different">'.$first.$second.'</span> ';
+							}
+						}
 					}
 					echo "<br />";
 				}
@@ -58,7 +78,13 @@ header("Content-type: text/html; charset=utf-8"); // UTF 8
 				echo "<div>";
 				foreach ($uppercase_all as $key => $first) {
 					foreach ($uppercase_all as $key => $second) {
-						if (in_array($first.$second, $pairs_upper_to_upper_font1)) echo $first.$second." ";
+						if (in_array($first.$second, $pairs_upper_to_upper_font1)) {
+							if (in_array($first.$second, $pairs_upper_to_upper_font2)) {
+								echo '<span class="similar">'.$first.$second.'</span> ';
+							} else {
+								echo '<span class="different">'.$first.$second.'</span> ';
+							}
+						}
 					}
 					echo "<br />";
 				}
@@ -70,7 +96,13 @@ header("Content-type: text/html; charset=utf-8"); // UTF 8
 				echo "<div>";
 				foreach ($uppercase_all as $key => $first) {
 					foreach ($uppercase_all as $key => $second) {
-						if (in_array($first.$second, $pairs_upper_to_upper_font2)) echo $first.$second." ";
+						if (in_array($first.$second, $pairs_upper_to_upper_font2)) {
+							if (in_array($first.$second, $pairs_upper_to_upper_font1)) {
+								echo '<span class="similar">'.$first.$second.'</span> ';
+							} else {
+								echo '<span class="different">'.$first.$second.'</span> ';
+							}
+						}
 					}
 					echo "<br />";
 				}
@@ -86,7 +118,13 @@ header("Content-type: text/html; charset=utf-8"); // UTF 8
 				echo "<div>";
 				foreach ($uppercase_all as $key => $first) {
 					foreach ($lowercase_all as $key => $second) {
-						if (in_array($first.$second, $pairs_upper_to_lower_font1)) echo $first.$second." ";
+						if (in_array($first.$second, $pairs_upper_to_lower_font1)) {
+							if (in_array($first.$second, $pairs_upper_to_lower_font2)) {
+								echo '<span class="similar">'.$first.$second.'</span> ';
+							} else {
+								echo '<span class="different">'.$first.$second.'</span> ';
+							}
+						}
 					}
 					echo "<br />";
 				}
@@ -98,7 +136,13 @@ header("Content-type: text/html; charset=utf-8"); // UTF 8
 				echo "<div>";
 				foreach ($uppercase_all as $key => $first) {
 					foreach ($lowercase_all as $key => $second) {
-						if (in_array($first.$second, $pairs_upper_to_lower_font2)) echo $first.$second." ";
+						if (in_array($first.$second, $pairs_upper_to_lower_font2)) {
+							if (in_array($first.$second, $pairs_upper_to_lower_font1)) {
+								echo '<span class="similar">'.$first.$second.'</span> ';
+							} else {
+								echo '<span class="different">'.$first.$second.'</span> ';
+							}
+						}
 					}
 					echo "<br />";
 				}

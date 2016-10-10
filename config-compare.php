@@ -1,10 +1,8 @@
 <?php
 
-# Select the two fonts you want to compare
-$font1_name = "Libre Franklin v1.013"; // Human readable name for Font 1
-$font2_name = "Source Sans"; // Human readable name for Font 2
-
-include('pairs/librefranklin1013.php'); // Load pair list for Font 1
+# Load pair list for Font 1
+include('pairs/librefranklin1013.php');
+$font1_name = $font_name;
 $pairs_lower_to_lower_font1 = $pairs_lower_to_lower;
 $pairs_upper_to_upper_font1 = $pairs_upper_to_upper;
 $pairs_upper_to_lower_font1 = $pairs_upper_to_lower;
@@ -16,7 +14,10 @@ unset($pairs_lower_to_lower);
 unset($pairs_upper_to_upper);
 unset($pairs_upper_to_lower);
 
-include('pairs/others/sourcesans.php'); // Load pair list for Font 2
+
+# Load pair list for Font 2
+include('pairs/others/retina.php');
+$font2_name = $font_name;
 $pairs_lower_to_lower_font2 = $pairs_lower_to_lower;
 $pairs_upper_to_upper_font2 = $pairs_upper_to_upper;
 $pairs_upper_to_lower_font2 = $pairs_upper_to_lower;

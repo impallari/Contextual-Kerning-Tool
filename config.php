@@ -1,7 +1,7 @@
 <?php
 
-$font_name = "Libre Franklin v1013"; // Human readable name
-include('pairs/librefranklin1013.php'); // Load pair list
+// Load pair list
+include('pairs/librefranklin1013.php'); 
 
 # Select English dictionary
 include ("dictionaries/english.php");

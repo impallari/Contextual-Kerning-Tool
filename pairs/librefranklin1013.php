@@ -1,7 +1,7 @@
 <?php
 
-# Expanded list of Kerning Pairs
-# Used for the LibreFranklin font
+# Human readable name
+$font_name = "LibreFranklin v1.013"; 
 
 # Lower to Lower
 # -------------------------

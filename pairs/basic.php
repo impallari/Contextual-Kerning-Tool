@@ -5,6 +5,9 @@
 # This list can be used as a template to start a kerning project
 # Should be expanded for each font
 
+# Human readable name
+$font_name = "Basic Pairs"; 
+
 # Lower to Lower
 # -------------------------
 $pairs_core_lower_to_lower = array("av", "va", "aw", "wa", 
