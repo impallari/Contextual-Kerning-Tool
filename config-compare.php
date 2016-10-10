@@ -16,7 +16,7 @@ unset($pairs_upper_to_lower);
 
 
 # Load pair list for Font 2
-include('pairs/others/retina.php');
+include('pairs/others/sourcesans.php');
 $font2_name = $font_name;
 $pairs_lower_to_lower_font2 = $pairs_lower_to_lower;
 $pairs_upper_to_upper_font2 = $pairs_upper_to_upper;

@@ -20,8 +20,15 @@ Reading your list of kerning pairs in the traditional list view is far from idea
 
 This tools gives you an easy to scan "birds eye" view of your kerning pairs. 
 
-It also shows you the list of pairs that you have not kerned. It sounds silly, but its actually quite usefull to quickly detect pairs that should be kerned and for some reason you forgot.
+It also shows you the list of pairs that you have not kerned. It sounds silly, but its actually quite usefull to quickly detect pairs that should be kerned and for some reason you forgot. It also enables you to kern as you go, instead of kerning at the end of the design process.
 
 ## Compare kerning in two fonts
 
 You can also easily compare the kerning in two different fonts (for example: Source Sans vs. Roboto), or in two different versions of the same font (for example: LibreFranklin v1.000 vs. LibreFranklin v2.000).
+
+## Sample Images
+
+![Lowercase Pairs.](/images/sample01-lowercase.png "Lowercase Pairs and word list")
+![Lowercase Pairs.](/images/sample02-uppercase.png "Uppercase Pairs and word list")
+![Lowercase Pairs.](/images/sample03-capitalized.png "Capitalized Pairs and word list")
+![Lowercase Pairs.](/images/sample04-compare.png "Comparing Fonts")
