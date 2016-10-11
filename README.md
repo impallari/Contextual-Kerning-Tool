@@ -24,7 +24,10 @@ It also shows you the list of pairs that you have not kerned. It sounds silly, b
 
 ## Compare kerning in two fonts:
 
-You can also easily compare the kerning in two different fonts (for example: Source Sans vs. Roboto), or in two different versions of the same font (for example: LibreFranklin v1.000 vs. LibreFranklin v2.000).
+You can also easily compare the kerning in:
+* Two different fonts (Source Sans vs. Roboto), or..
+* Two different versions of the same font (LibreFranklin v1.000 vs. LibreFranklin v2.000), or..
+* Two different weights of the same family (Thin vs Heavy).
 
 ## How it works:
 Since this is only an initial prototype, operation ir rather tedious and involves a lot of manual steps that hopefully will be automated in future iterations (Ideally I will love to see this idea implemented as a Glyphs script or plugin).
