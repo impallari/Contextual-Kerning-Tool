@@ -38,6 +38,7 @@ header("Content-type: text/html; charset=utf-8"); // UTF 8
 			</td>
 		</tr>
 		
+		<!-- Lower to Lower -->
 		<tr>
 			<td style="padding: 20px; white-space: nowrap" valign="top" align="right" width="50%">
 				<?php
@@ -67,6 +68,7 @@ header("Content-type: text/html; charset=utf-8"); // UTF 8
 			</td>
 		</tr>
 	
+		<!-- Upper to Upper -->
 		<tr>
 			<td style="padding: 20px; white-space: nowrap" valign="top" align="right" width="50%">
 				<?php
@@ -94,6 +96,7 @@ header("Content-type: text/html; charset=utf-8"); // UTF 8
 			</td>
 		</tr>
 		
+		<!-- Upper to Lower-->
 		<tr>
 			<td style="padding: 20px; white-space: nowrap" valign="top" align="right" width="50%">
 				<?php
@@ -122,6 +125,37 @@ header("Content-type: text/html; charset=utf-8"); // UTF 8
 		</tr>		
 	
 	</table>
+	
+	<!-- As pair list -->
+	<table width="100%">
+	
+		<tr>
+			<td style="padding: 20px;" align="center" valign="top" width="33%">
+				<div><?php
+				foreach ($pairs_lower_to_lower as $key => $value) {
+					echo 'nn'.$value.'nn oo'.$value.'oo  nn'.$value.'oo oo'.$value.'nn<br />';
+				}
+				?></div>
+			</td>
+			<td style="padding: 20px;" align="center" valign="top" width="33%">
+				<div><?php
+				foreach ($pairs_upper_to_upper as $key => $value) {
+					echo 'HH'.$value.'HH OO'.$value.'OO  HH'.$value.'OO OO'.$value.'HH<br />';
+	
+				}
+				?></div>
+			</td>
+			<td style="padding: 20px;" align="center" valign="top" width="33%">
+				<div><?php
+				foreach ($pairs_upper_to_lower as $key => $value) {
+					echo $value.'nnon<br />';
+				}
+				?></div>
+			</td>						
+		</tr>
+		
+	</table>
+	
 	
 </body>
 </html>
