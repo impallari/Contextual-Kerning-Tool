@@ -74,6 +74,8 @@ header("Content-type: text/html; charset=utf-8"); // UTF 8
 			$cleantext = preg_replace('/\s+/', ' ', strtoupper(trim($text)));
 			$cleantext = explode( ' ', $cleantext );
 			$cleantext = array_unique( $cleantext );
+			$regex = '/^[ABCDEFGHIJKLMNOPQRSTUVWXYZ]{5,15}$/u';
+			$cleantext = array_slice(array_values(preg_grep($regex, $cleantext)), 0);						
 			
 			foreach ($cleantext as $key => $word) {
 				$pair_count = 0;

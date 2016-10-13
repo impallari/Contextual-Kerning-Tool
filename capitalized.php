@@ -72,6 +72,8 @@ header("Content-type: text/html; charset=utf-8"); // UTF 8
 			$cleantext = preg_replace('/\s+/', ' ', ucwords(trim($text)));
 			$cleantext = explode( ' ', $cleantext );
 			$cleantext = array_unique( $cleantext );
+			$regex = '/^[abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ]{5,15}$/u';
+			$cleantext = array_slice(array_values(preg_grep($regex, $cleantext)), 0);				
 
 			function array_orderby() {
 				$args = func_get_args();
