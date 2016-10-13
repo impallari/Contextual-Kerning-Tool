@@ -84,8 +84,11 @@ header("Content-type: text/html; charset=utf-8"); // UTF 8
 					if (strpos($word, $pair) !== false) $pair_count = $pair_count + 1;
 				}
 				if ($pair_count >= 5) $resultado_kerned[$word] = $pair_count;
+				if ($pair_count == 0) $resultado_spacing[] = $word;
 			}
 			arsort($resultado_kerned);
+			sort($resultado_spacing);
+			
 			echo '<p><strong>'.count($resultado_kerned).' words having 5 or more kerning pairs:</strong></p>';
 			print '<div>';
 			foreach ($resultado_kerned as $word => $pairsum) {
@@ -96,15 +99,6 @@ header("Content-type: text/html; charset=utf-8"); // UTF 8
 		</td>
 		<td style="padding: 20px;" valign="top">
 			<?php
-			foreach ($cleantext as $key => $word) {
-				$pair_count = 0;
-				foreach ($pairs_upper_to_upper as $key => $pair) {
-					#Por Cada Par
-					if (strpos($word, $pair) !== false) $pair_count = $pair_count + 1;
-				}
-				if ($pair_count == 0) $resultado_spacing[] = $word;
-			}
-			sort($resultado_spacing);
 			echo '<p><strong>'.count($resultado_spacing).' words using spacing only:</strong></p>';			
 			print '<div>';
 			foreach ($resultado_spacing as $key => $word) {

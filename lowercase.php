@@ -77,14 +77,20 @@ header("Content-type: text/html; charset=utf-8"); // UTF 8
 			$regex = '/^[abcdefghijklmnopqrstuvwxyz]{5,15}$/u';
 			$cleantext = array_slice(array_values(preg_grep($regex, $cleantext)), 0);						
 			
+			# Split dictionary
 			foreach ($cleantext as $key => $word) {
 				$pair_count = 0;
 				foreach ($pairs_lower_to_lower as $key => $pair) {
 					if (strpos($word, $pair) !== false) $pair_count = $pair_count + 1;
 				}
 				if ($pair_count >= 5) $resultado_kerned[$word] = $pair_count;
+				if ($pair_count == 0) $resultado_spacing[] = $word;
 			}
+			
+			# Sort Results
 			arsort($resultado_kerned);
+			sort($resultado_spacing);					
+			
 			echo '<p><strong>'.count($resultado_kerned).' words having 5 or more kerning pairs:</strong></p>';
 			echo '<div>';
 			foreach ($resultado_kerned as $word => $pairs) {
@@ -95,15 +101,6 @@ header("Content-type: text/html; charset=utf-8"); // UTF 8
 		</td>
 		<td style="padding: 20px;" valign="top">
 			<?php
-			foreach ($cleantext as $key => $word) {
-				$pair_count = 0;
-				foreach ($pairs_lower_to_lower as $key => $pair) {
-					#Por Cada Par
-					if (strpos($word, $pair) !== false) $pair_count = $pair_count + 1;
-				}
-				if ($pair_count == 0) $resultado_spacing[] = $word;
-			}
-			sort($resultado_spacing);
 			echo '<p><strong>'.count($resultado_spacing).' words using spacing only:</strong></p>';			
 			print '<div>';
 			foreach ($resultado_spacing as $key => $word) {
@@ -114,6 +111,5 @@ header("Content-type: text/html; charset=utf-8"); // UTF 8
 		</td>
 	</tr>
 </table>
-
 </body>
 </html>

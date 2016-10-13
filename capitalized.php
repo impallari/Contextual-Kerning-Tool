@@ -1,5 +1,6 @@
 <?php 
 header("Content-type: text/html; charset=utf-8"); // UTF 8 
+# $start = microtime(true);
 ?>
 <html>
 <head>
@@ -90,19 +91,26 @@ header("Content-type: text/html; charset=utf-8"); // UTF 8
 				return array_pop($args);
 			}
 						
+			# Split dictionary into Heavyly Kerned and CapOnly kerns
 			foreach ($cleantext as $key => $word) {
 				$pair_count = 0;
 				foreach ($pairs_upper_to_lower as $key => $upperpair) {
 					if (strpos($word, $upperpair) !== false) {
+			    	# Hay kerning en la mayuscula
 			    	$pair_count = $pair_count + 1;
 			    	foreach ($pairs_lower_to_lower as $key => $lowepair) {
 			    		if (strpos($word, $lowepair) !== false) $pair_count = $pair_count + 1;
 			    	}
 						if ($pair_count >= 5) $resultado_full_kerning[] = array('par' => $upperpair, 'palabra' => $word, 'kerns' => $pair_count);
+						if ($pair_count == 1) $resultado_cap_only[] = array('par' => $upperpair, 'palabra' => $word, 'kerns' => $pair_count);
 					}	
 				}
 			}	
+			
+			# Sort Results
 			$resultado_full_kerning = array_orderby($resultado_full_kerning, 'par', SORT_ASC, 'kerns', SORT_DESC, 'palabra', SORT_ASC);
+			$resultado_cap_only = array_orderby($resultado_cap_only, 'par', SORT_ASC, 'kerns', SORT_DESC, 'palabra', SORT_ASC);
+			
 			print '<p><strong>'.count($resultado_full_kerning).' words having 5 or more kerning pairs:</strong></p>';
 			print '<div>';
 			foreach ($resultado_full_kerning as $details) {
@@ -113,21 +121,7 @@ header("Content-type: text/html; charset=utf-8"); // UTF 8
 		</td>
 		<td style="padding: 20px;" valign="top" colspan="2" width="34%" align="center">
 			<?php
-			foreach ($cleantext as $key => $word) {
-				$pair_count = 0;
-				foreach ($pairs_upper_to_lower as $key => $upperpair) {
-					if (strpos($word, $upperpair) !== false) {
-			    	$pair_count = $pair_count + 1;
-			    	foreach ($pairs_lower_to_lower as $key => $lowepair) {
-			    		if (strpos($word, $lowepair) !== false) $pair_count = $pair_count + 1;
-			    	}
-						if ($pair_count == 1) $resultado_cap_only[] = array('par' => $upperpair, 'palabra' => $word, 'kerns' => $pair_count);
-					}	
-				}
-			}
-			$resultado_cap_only = array_orderby($resultado_cap_only, 'par', SORT_ASC, 'kerns', SORT_DESC, 'palabra', SORT_ASC);
 			print '<p><strong>'.count($resultado_cap_only).' words having kerning in the first pair only:</strong></p>';
-			
 			print '<div>';
 			foreach ($resultado_cap_only as $details) {
 					print $details['palabra'].' ';
@@ -155,6 +149,6 @@ header("Content-type: text/html; charset=utf-8"); // UTF 8
 		</td>		
 	</tr>
 </table>
-
+<?php # echo microtime(true) - $start; ?>
 </body>
 </html>
