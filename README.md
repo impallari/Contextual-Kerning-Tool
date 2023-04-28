@@ -1,4 +1,4 @@
-# Contextual Kerning Tool
+# Contextual Kerning Tool (Prototype)
 
 The "Contextual Kerning Tool" is a proof of concept for a new tool to aid the kerning process.
 
