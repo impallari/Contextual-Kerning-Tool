@@ -18,6 +18,14 @@ By looking at the list of words that are resolved using spacing only, if there i
 
 And by looking at the list of heavily kerned words you can spot inconsistency cases (where you have set some individual pair overly tight or overly loose). Since they are displayed one after another, minor differecnes add up, and any incosistency will quickly pop up.
 
+## Bird-eye view of your kerning pairs:
+
+Reading your list of kerning pairs in the traditional list view is far from ideal.
+
+This tools gives you an easy to scan "birds eye" view of your kerning pairs. 
+
+It also shows you the list of pairs that you have not kerned. It sounds silly, but its actually quite usefull to quickly detect pairs that should be kerned and for some reason you forgot. It also enables you to kern as you go, instead of kerning at the end of the design process.
+
 ## Sample Images:
 
 Lowercase Pairs and Word list:
@@ -28,14 +36,6 @@ Uppercase Pairs and Word list:
 
 Capitalized Pairs and Word list:
 ![Lowercase Pairs.](/images/sample03-capitalized.png "Capitalized Pairs and Word list")
-
-## Bird-eye view of your kerning pairs:
-
-Reading your list of kerning pairs in the traditional list view is far from ideal.
-
-This tools gives you an easy to scan "birds eye" view of your kerning pairs. 
-
-It also shows you the list of pairs that you have not kerned. It sounds silly, but its actually quite usefull to quickly detect pairs that should be kerned and for some reason you forgot. It also enables you to kern as you go, instead of kerning at the end of the design process.
 
 ## Compare kerning in two fonts:
 
